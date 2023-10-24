@@ -40,26 +40,28 @@ public class StatsService {
     }
 
     public int QuantityMonthMinMedium(long[] sales) {
+        long m = mediumSales(sales);
         int minMediumMonth = 0;
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] < mediumSales(sales)) {
-                minMediumMonth ++;
+            if (sales[i] < m) {
+                minMediumMonth++;
             }
         }
         return minMediumMonth;
     }
 
-        public int QuantityMonthMaxMedium(long[] sales) {
-            int maxMediumMonth = 0;
-            for (int i = 0; i < sales.length; i++) {
-                if (sales[i] > mediumSales(sales)) {
-                    maxMediumMonth ++;
-                }
+    public int QuantityMonthMaxMedium(long[] sales) {
+        long m = mediumSales(sales);
+        int maxMediumMonth = 0;
+        for (int i = 0; i < sales.length; i++) {
+            if (sales[i] > m) {
+                maxMediumMonth++;
             }
-            return maxMediumMonth;
         }
-
+        return maxMediumMonth;
     }
+
+}
 
 
 
