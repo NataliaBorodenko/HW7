@@ -19,7 +19,7 @@ public class StatsService {
         return mediumSumma;
     }
 
-    public int MonthMaxSales(long[] sales) {
+    public int monthMaxSales(long[] sales) {
         int maxMonth = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] >= sales[maxMonth]) {
@@ -29,7 +29,7 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public int MonthMinSales(long[] sales) {
+    public int monthMinSales(long[] sales) {
         int minMonth = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] <= sales[minMonth]) {
@@ -39,7 +39,7 @@ public class StatsService {
         return minMonth + 1;
     }
 
-    public int QuantityMonthMinMedium(long[] sales) {
+    public int quantityMonthMinMedium(long[] sales) {
         long m = mediumSales(sales);
         int minMediumMonth = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -50,7 +50,7 @@ public class StatsService {
         return minMediumMonth;
     }
 
-    public int QuantityMonthMaxMedium(long[] sales) {
+    public int quantityMonthMaxMedium(long[] sales) {
         long m = mediumSales(sales);
         int maxMediumMonth = 0;
         for (int i = 0; i < sales.length; i++) {

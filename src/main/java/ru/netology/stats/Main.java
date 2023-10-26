@@ -16,9 +16,9 @@ public class Main {
         System.out.println(Arrays.toString(sales));
         System.out.println("Сумма продаж -" + service.summaSales(sales));
         System.out.println("Средняя сумма продаж - " + service.mediumSales(sales));
-        System.out.println("Номер месяца с максимальными продажами - " + service.MonthMaxSales(sales));
-        System.out.println("Номер месяца с минимальными продажами - " + service.MonthMinSales(sales));
-        System.out.println("Количество продаж меньше средней - " + service.QuantityMonthMinMedium(sales));
-        System.out.println("Количество продаж меньше средней - " + service.QuantityMonthMaxMedium(sales));
+        System.out.println("Номер месяца с максимальными продажами - " + service.monthMaxSales(sales));
+        System.out.println("Номер месяца с минимальными продажами - " + service.monthMinSales(sales));
+        System.out.println("Количество продаж меньше средней - " + service.quantityMonthMinMedium(sales));
+        System.out.println("Количество продаж меньше средней - " + service.quantityMonthMaxMedium(sales));
     }
 }

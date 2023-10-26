@@ -27,7 +27,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMonthMaxSales = 8;
-        int actualMonthMaxSales = service.MonthMaxSales(sales);
+        int actualMonthMaxSales = service.monthMaxSales(sales);
         Assertions.assertEquals(expectedMonthMaxSales, actualMonthMaxSales);
     }
 
@@ -36,7 +36,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMonthMinSales = 9;
-        int actualMonthMinSales = service.MonthMinSales(sales);
+        int actualMonthMinSales = service.monthMinSales(sales);
         Assertions.assertEquals(expectedMonthMinSales, actualMonthMinSales);
     }
 
@@ -45,7 +45,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedQuantityMonthMinMedium = 5;
-        int actualQuantityMonthMinMedium = service.QuantityMonthMinMedium(sales);
+        int actualQuantityMonthMinMedium = service.quantityMonthMinMedium(sales);
         Assertions.assertEquals(expectedQuantityMonthMinMedium, actualQuantityMonthMinMedium);
     }
 
@@ -54,7 +54,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedQuantityMonthMaxMedium = 5;
-        int actualQuantityMonthMaxMedium = service.QuantityMonthMinMedium(sales);
+        int actualQuantityMonthMaxMedium = service.quantityMonthMinMedium(sales);
         Assertions.assertEquals(expectedQuantityMonthMaxMedium, actualQuantityMonthMaxMedium);
     }
 }
